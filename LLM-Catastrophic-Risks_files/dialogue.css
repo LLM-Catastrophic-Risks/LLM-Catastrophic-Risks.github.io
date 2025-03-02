@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5ddd5;
+    padding: 20px;
+    text-align: center;
+}
+
+.dialogue-chat-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.dialogue-message {
+    position: relative;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+    width: fit-content;
+    max-width: 80%;
+    display: none;
+    white-space: pre-wrap;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* System 样式 */
+.dialogue-system {
+    background-color: #6e4b7f;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* 左边消息 */
+.dialogue-left {
+    background-color: #f1f0f0;
+    border: 1px solid #ddd;
+    margin-right: auto;
+}
+
+/* 右边消息 */
+.dialogue-right {
+    background-color: #dcf8c6;
+    border: 1px solid #b2e59e;
+    margin-left: auto;
+}
+
+/* 小三角 */
+.dialogue-message::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+}
+
+.dialogue-left::after {
+    left: -20px;
+    top: 10px;
+    border-right-color: #f1f0f0;
+}
+
+.dialogue-right::after {
+    right: -20px;
+    top: 10px;
+    border-left-color: #dcf8c6;
+}
+
+/* 动作标红 */
+.dialogue-action {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#dialogue-startBtn {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

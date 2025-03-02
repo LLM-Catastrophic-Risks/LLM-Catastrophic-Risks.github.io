@@ -1,467 +1,470 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:margin="http://www.w3.org/1999/xhtml">
 
 <head lang="en">
-  <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
 
-  <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+    <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
 
-  <title>LLM Catastrophic Risks</title>
+    <title>LLM Catastrophic Risks</title>
 
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- mirror: F0%9F%AA%9E&lt -->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mirror: F0%9F%AA%9E&lt -->
 
-  <link rel="stylesheet" type="text/css" href="./LLMs-believe-the-earth-is-flat_files/slick.css">
-  <link rel="stylesheet" type="text/css" href="./LLMs-believe-the-earth-is-flat_files/slick-theme.css">
-  <link rel="stylesheet" href="./LLMs-believe-the-earth-is-flat_files/bulma.min.css">
-  <link rel="stylesheet" href="./LLMs-believe-the-earth-is-flat_files/bulma-slider.min.css">
-  <link rel="stylesheet" href="./LLMs-believe-the-earth-is-flat_files/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./LLMs-believe-the-earth-is-flat_files/bootstrap.min.css">
-  <link rel="stylesheet" href="./LLMs-believe-the-earth-is-flat_files/font-awesome.min.css">
-  <link rel="stylesheet" href="./LLMs-believe-the-earth-is-flat_files/codemirror.min.css">
-  <link rel="stylesheet" href="./LLMs-believe-the-earth-is-flat_files/app.css">
-  <link rel="stylesheet" href="./LLMs-believe-the-earth-is-flat_files/index.css">
-  <link rel="stylesheet" href="./LLMs-believe-the-earth-is-flat_files/select.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="resources/glide.core.min.css">
-  <link rel="stylesheet" href="resources/glide.theme.min.css">
-  <link rel="stylesheet" href="resources/glide-custom.css">
-  <script src="resources/handlers.js"></script>
-  <script src="./LLMs-believe-the-earth-is-flat_files/jquery.min.js"></script>
-  <script src="./LLMs-believe-the-earth-is-flat_files/bootstrap.min.js"></script>
-  <script src="./LLMs-believe-the-earth-is-flat_files/codemirror.min.js"></script>
-  <script src="./LLMs-believe-the-earth-is-flat_files/clipboard.min.js"></script>
-  <script src="./LLMs-believe-the-earth-is-flat_files/video_comparison.js"></script>
-  <script src="./LLMs-believe-the-earth-is-flat_files/select.js"></script>
-  <script src="./LLMs-believe-the-earth-is-flat_files/bulma-slider.min.js"></script>
-  <script src="./LLMs-believe-the-earth-is-flat_files/bulma-carousel.min.js"></script>
-  <script src="./LLMs-believe-the-earth-is-flat_files/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./LLM-Catastrophic-Risks_files/slick.css">
+    <link rel="stylesheet" type="text/css" href="./LLM-Catastrophic-Risks_files/slick-theme.css">
+    <link rel="stylesheet" href="./LLM-Catastrophic-Risks_files/bulma.min.css">
+    <link rel="stylesheet" href="./LLM-Catastrophic-Risks_files/bulma-slider.min.css">
+    <link rel="stylesheet" href="./LLM-Catastrophic-Risks_files/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./LLM-Catastrophic-Risks_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./LLM-Catastrophic-Risks_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./LLM-Catastrophic-Risks_files/codemirror.min.css">
+    <link rel="stylesheet" href="./LLM-Catastrophic-Risks_files/app.css">
+    <link rel="stylesheet" href="./LLM-Catastrophic-Risks_files/index.css">
+    <link rel="stylesheet" href="./LLM-Catastrophic-Risks_files/select.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="resources/glide.core.min.css">
+    <link rel="stylesheet" href="resources/glide.theme.min.css">
+    <link rel="stylesheet" href="resources/glide-custom.css">
+    <script src="resources/handlers.js"></script>
+    <script src="./LLM-Catastrophic-Risks_files/jquery.min.js"></script>
+    <script src="./LLM-Catastrophic-Risks_files/bootstrap.min.js"></script>
+    <script src="./LLM-Catastrophic-Risks_files/codemirror.min.js"></script>
+    <script src="./LLM-Catastrophic-Risks_files/clipboard.min.js"></script>
+    <script src="./LLM-Catastrophic-Risks_files/video_comparison.js"></script>
+    <script src="./LLM-Catastrophic-Risks_files/select.js"></script>
+    <script src="./LLM-Catastrophic-Risks_files/bulma-slider.min.js"></script>
+    <script src="./LLM-Catastrophic-Risks_files/bulma-carousel.min.js"></script>
+    <script src="./LLM-Catastrophic-Risks_files/index.js"></script>
 
-  <script src="resources/glide.min.js"></script>
+    <script src="resources/glide.min.js"></script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ6PES7EKD"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    // gtag('config', 'G-RZ6PES7EKD');
-  </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ6PES7EKD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  <style>
-    #outputContainer,
-    #outputContainer2,
-    #outputContainer3,
-    #outputContainer4 {
-      display: flex;
-      justify-content: center;
-      align-items: start;
-      width: 100%;
-      /* or any value according to your need */
-      margin: auto;
-      /* Center the container */
-    }
-
-    .chatbotOutput {
-      flex: 1;
-      /* Make both chatbot windows take equal width */
-      max-width: calc(100% - 1px);
-      /* Subtract the margin */
-      position: relative;
-      border: 1px solid black;
-      background-color: #dee1e5;
-      /* Background color for the header */
-      margin: 1px auto;
-      width: 100%;
-      /* Adjust as needed */
-      padding: 2px;
-      box-sizing: border-box;
-      border-radius: 5px;
-      /* Optional for rounded corners */
-    }
-
-    .chatbotHeader {
-      display: flex;
-      align-items: center;
-      justify-content: start;
-      background-color: #dee1e5;
-      padding: 5px;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      min-height: 50px;
-      /* Adjusted the minimum height */
-    }
-
-    .chatbotHeader span {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 80%;
-      /* Adjusted the max-width */
-      display: inline-block;
-      flex-shrink: 0;
-      /* Added to prevent shrinking */
-    }
-
-    /* Adjust font size on smaller screens */
-    @media (max-width: 600px) {
-      .chatbotHeader span {
-        font-size: 10px;
-        /* Adjusted the font size */
-        max-width: 50%;
-        /* Adjusted the max-width */
-      }
-    }
-
-    .chatbotHeader img {
-      height: 30px;
-      width: auto;
-      margin-right: 10px;
-      flex-shrink: 0;
-      /* Added to prevent shrinking */
-    }
-
-
-
-
-    .userMessage {
-      background-color: #5e96fc;
-      color: white;
-      max-width: 80%;
-      border-radius: 10px;
-      margin: 10px;
-      padding: 10px;
-      align-self: flex-end;
-      /* Adjust the alignment of the userMessage */
-    }
-
-    .assistantMessage {
-      background-color: #f4f4f4;
-      color: black;
-      max-width: 80%;
-      border-radius: 10px;
-      margin: 10px;
-      padding: 10px;
-      align-self: flex-start;
-      /* Adjust the alignment of the assistantMessage */
-    }
-
-    .output {
-      text-align: justify;
-      text-justify: inter-word;
-    }
-
-    .output-container {
-      background-color: white;
-      height: 500px;
-      overflow-y: auto;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      /* Align items to the right */
-      word-wrap: break-word;
-    }
-
-
-    #controlsContainer,
-    #controlsContainer2,
-    #controlsContainer3,
-    #controlsContainer4 {
-      display: flex;
-      justify-content: left;
-      align-items: left;
-      background-color: rgb(140, 21, 21);
-      padding: 7px;
-      border-radius: 5px;
-      margin-bottom: 2px;
-    }
-
-    #exampleSelector option,
-    #exampleSelector2 option,
-    #exampleSelector3 option,
-    #exampleSelector4 option {
-      color: black;
-    }
-
-    #exampleSelectorContainer label,
-    #exampleSelectorContainer2 label,
-    #exampleSelectorContainer3 label,
-    #exampleSelectorContainer4 label {
-      margin: 3px;
-      color: white;
-    }
-
-    .footer {
-      position: relative;
-      margin-top: 25px;
-      /* Negative value of footer height */
-      height: 60px;
-      clear: both;
-      padding-top: 20px;
-      color: #999;
-    }
-  </style>
-
-
-  <style>
-    body {
-      overflow-x: hidden;
-      /* Hide horizontal overflow */
-    }
-  </style>
-
-  <style>
-    .blinking-cursor {
-      margin-left: 5px;
-      background-color: #fff;
-      animation: blink 1s infinite;
-    }
-
-    @keyframes blink {
-
-      0%,
-      50% {
-        opacity: 1;
-      }
-
-      50.1%,
-      100% {
-        opacity: 0;
-      }
-    }
-
-    .triangle-btn {
-      background-color: transparent;
-      border: none;
-      position: relative;
-      padding: 3px;
-    }
-
-    .arrow-down {
-      width: 0;
-      height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 5px solid #000000;
-      /* Adjust color if needed */
-      display: inline-block;
-    }
-
-    .triangle-btn:focus {
-      background-color: #e0e0e0;
-      outline: none;
-    }
-  </style>
-
-
-
-  <style>
-    .blue-text {
-      color: blue;
-    }
-  </style>
-
-  <style>
-    .red-text {
-      color: red;
-    }
-  </style>
-
-  <script src="LLMs-believe-the-earth-is-flat_files/sample_conversations.js"></script>
-
-  <script>
-
-    let timeoutId; // Declare a variable to store the timeout ID
-
-    function typeWriterEffect(element, inputText) {
-      clearTimeout(timeoutId); // Clear the previous timeout
-
-      const text = inputText;
-      const typewriter = document.getElementById(element);
-      let index = 0;
-      typewriter.innerHTML = "";
-
-      function type() {
-        if (index < text.length) {
-          typewriter.innerHTML = text.slice(0, index);
-          index++;
-          timeoutId = setTimeout(type, 0.08);
-        } else {
-          typewriter.innerHTML = text.slice(0, index);
+        function gtag() {
+            dataLayer.push(arguments);
         }
-      }
 
-      type(); // Start typing
-    }
+        gtag('js', new Date());
+        // gtag('config', 'G-RZ6PES7EKD');
+    </script>
+
+    <style>
+        #outputContainer,
+        #outputContainer2,
+        #outputContainer3,
+        #outputContainer4 {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            width: 100%;
+            /* or any value according to your need */
+            margin: auto;
+            /* Center the container */
+        }
+
+        .chatbotOutput {
+            flex: 1;
+            /* Make both chatbot windows take equal width */
+            max-width: calc(100% - 1px);
+            /* Subtract the margin */
+            position: relative;
+            border: 1px solid black;
+            background-color: #dee1e5;
+            /* Background color for the header */
+            margin: 1px auto;
+            width: 100%;
+            /* Adjust as needed */
+            padding: 2px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            /* Optional for rounded corners */
+        }
+
+        .chatbotHeader {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            background-color: #dee1e5;
+            padding: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            min-height: 50px;
+            /* Adjusted the minimum height */
+        }
+
+        .chatbotHeader span {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 80%;
+            /* Adjusted the max-width */
+            display: inline-block;
+            flex-shrink: 0;
+            /* Added to prevent shrinking */
+        }
+
+        /* Adjust font size on smaller screens */
+        @media (max-width: 600px) {
+            .chatbotHeader span {
+                font-size: 10px;
+                /* Adjusted the font size */
+                max-width: 50%;
+                /* Adjusted the max-width */
+            }
+        }
+
+        .chatbotHeader img {
+            height: 30px;
+            width: auto;
+            margin-right: 10px;
+            flex-shrink: 0;
+            /* Added to prevent shrinking */
+        }
 
 
-    function handleChange(typeSelector, exampleSelector, outputElement, texts) {
-      var typeSelectorElement = document.getElementById(typeSelector);
-      var type = typeSelectorElement.value;
-      var exampleSelectorElement = document.getElementById(exampleSelector);
-      var example = exampleSelectorElement.value;
-      var typewriterElement = document.getElementById(outputElement);
+        .userMessage {
+            background-color: #5e96fc;
+            color: white;
+            max-width: 80%;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            align-self: flex-end;
+            /* Adjust the alignment of the userMessage */
+        }
 
-      typeWriterEffect(outputElement, texts[type][example]);
-    }
+        .assistantMessage {
+            background-color: #f4f4f4;
+            color: black;
+            max-width: 80%;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            align-self: flex-start;
+            /* Adjust the alignment of the assistantMessage */
+        }
 
-  </script>
+        .output {
+            text-align: justify;
+            text-justify: inter-word;
+        }
 
-  <style>
-    .video-wrapper {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      padding-top: 56.25%;
-      /* For 16:9 aspect ratio */
-    }
+        .output-container {
+            background-color: white;
+            height: 500px;
+            overflow-y: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* Align items to the right */
+            word-wrap: break-word;
+        }
 
-    .video-frame {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
 
-    #title-row {
-      justify-content: flex-start;
-    }
-  </style>
+        #controlsContainer,
+        #controlsContainer2,
+        #controlsContainer3,
+        #controlsContainer4 {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            background-color: rgb(140, 21, 21);
+            padding: 7px;
+            border-radius: 5px;
+            margin-bottom: 2px;
+        }
+
+        #exampleSelector option,
+        #exampleSelector2 option,
+        #exampleSelector3 option,
+        #exampleSelector4 option {
+            color: black;
+        }
+
+        #exampleSelectorContainer label,
+        #exampleSelectorContainer2 label,
+        #exampleSelectorContainer3 label,
+        #exampleSelectorContainer4 label {
+            margin: 3px;
+            color: white;
+        }
+
+        .footer {
+            position: relative;
+            margin-top: 25px;
+            /* Negative value of footer height */
+            height: 60px;
+            clear: both;
+            padding-top: 20px;
+            color: #999;
+        }
+    </style>
+
+
+    <style>
+        body {
+            overflow-x: hidden;
+            /* Hide horizontal overflow */
+        }
+    </style>
+
+    <style>
+        .blinking-cursor {
+            margin-left: 5px;
+            background-color: #fff;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            50.1%,
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .triangle-btn {
+            background-color: transparent;
+            border: none;
+            position: relative;
+            padding: 3px;
+        }
+
+        .arrow-down {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #000000;
+            /* Adjust color if needed */
+            display: inline-block;
+        }
+
+        .triangle-btn:focus {
+            background-color: #e0e0e0;
+            outline: none;
+        }
+    </style>
+
+
+    <style>
+        .blue-text {
+            color: blue;
+        }
+    </style>
+
+    <style>
+        .red-text {
+            color: red;
+        }
+    </style>
+
+    <script src="LLM-Catastrophic-Risks_files/sample_conversations.js"></script>
+
+    <script>
+
+        let timeoutId; // Declare a variable to store the timeout ID
+
+        function typeWriterEffect(element, inputText) {
+            clearTimeout(timeoutId); // Clear the previous timeout
+
+            const text = inputText;
+            const typewriter = document.getElementById(element);
+            let index = 0;
+            typewriter.innerHTML = "";
+
+            function type() {
+                if (index < text.length) {
+                    typewriter.innerHTML = text.slice(0, index);
+                    index++;
+                    timeoutId = setTimeout(type, 0.08);
+                } else {
+                    typewriter.innerHTML = text.slice(0, index);
+                }
+            }
+
+            type(); // Start typing
+        }
+
+
+        function handleChange(typeSelector, exampleSelector, outputElement, texts) {
+            var typeSelectorElement = document.getElementById(typeSelector);
+            var type = typeSelectorElement.value;
+            var exampleSelectorElement = document.getElementById(exampleSelector);
+            var example = exampleSelectorElement.value;
+            var typewriterElement = document.getElementById(outputElement);
+
+            typeWriterEffect(outputElement, texts[type][example]);
+        }
+
+    </script>
+
+    <style>
+        .video-wrapper {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%;
+            /* For 16:9 aspect ratio */
+        }
+
+        .video-frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        #title-row {
+            justify-content: flex-start;
+        }
+    </style>
 
 </head>
 
 <body>
 
-  <nav class="navbar navbar-default" style="background-color: rgb(140, 21, 21); border-color: rgb(140, 21, 21)">
+<nav class="navbar navbar-default" style="background-color: rgb(140, 21, 21); border-color: rgb(140, 21, 21)">
     <div class="container-fluid; "></div>
 
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="#" class="navbar-brand" style="font-weight: 800">LLMs Believe the Earth is Flat</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand" style="font-weight: 800">Analyzing Catastrophic Risks in Decision-making of
+            Autonomous LLM Agents</a>
     </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li> <a href="./index.html#a_quick_glance" style="color: white; font-weight: 500">A Quick Glance</a></li>
-        <li> <a href="./index.html#paper_overview" style="color: white; font-weight: 500">Paper Overview</a></li>
-        <li> <a href="./index.html#dataset" style="color: white; font-weight: 500">Dataset</a></li>
-        <li> <a href="./index.html#examples" style="color: white; font-weight: 500">Examples</a></li>
-        <li> <a href="./index.html#ethics" style="color: white; font-weight: 500">Ethics and Disclosure</a></li>
-      </ul>
-    </div>
+    <!--    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+    <!--      <ul class="nav navbar-nav">-->
+    <!--        <li> <a href="./index.html#a_quick_glance" style="color: white; font-weight: 500">A Quick Glance</a></li>-->
+    <!--        <li> <a href="./index.html#paper_overview" style="color: white; font-weight: 500">Paper Overview</a></li>-->
+    <!--        <li> <a href="./index.html#dataset" style="color: white; font-weight: 500">Dataset</a></li>-->
+    <!--        <li> <a href="./index.html#examples" style="color: white; font-weight: 500">Examples</a></li>-->
+    <!--        <li> <a href="./index.html#ethics" style="color: white; font-weight: 500">Ethics and Disclosure</a></li>-->
+    <!--      </ul>-->
+    <!--    </div>-->
 
     </div>
-  </nav>
+</nav>
 
 
-  <div class="container" id="header" style="text-align: center; margin: auto;">
+<div class="container" id="header" style="text-align: center; margin: auto;">
     <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto;">
-      <div class="col-md-12 text-center" style="display: flex; align-items: center;">
-        <img src="./LLMs-believe-the-earth-is-flat_files/images/logo.png" alt="Logo"
-          style="max-height: 80px; margin-right: 2px;">
-        <h2 id="title" style="margin-bottom: 0;">
-          "Nuclear Deployed!": Analyzing Catastrophic Risks in Decision-making of Autonomous LLM Agents
-        </h2>
-      </div>
+        <div class="col-md-12 text-center" style="display: flex; align-items: center;">
+            <img src="./LLM-Catastrophic-Risks_files/images/logo.png" alt="Logo"
+                 style="max-height: 80px; margin-right: 2px;">
+            <h2 id="title" style="margin-bottom: 0;">
+                "Nuclear Deployed!": Analyzing Catastrophic Risks in Decision-making of Autonomous LLM Agents
+            </h2>
+        </div>
     </div>
     <div class="row">
-      <div class="col-md-12 text-center">
-        <h4 id="subtitle" style="color: rgb(140, 21, 21); margin-top: 5px;">
-          <!-- LLMs' correct beliefs on factual knowledge can be easily manipulated by various persuasive strategies! -->
+        <div class="col-md-12 text-center">
+            <h4 id="subtitle" style="color: rgb(140, 21, 21); margin-top: 5px;">
+                <!-- LLMs' correct beliefs on factual knowledge can be easily manipulated by various persuasive strategies! -->
 
-        </h4>
-      </div>
+            </h4>
+        </div>
     </div>
-  </div>
+</div>
 
 
-  <script>
-  </script>
-  <div class="container" id="main">
+<script>
+</script>
+<div class="container" id="main">
     <div class="row">
-      <div class="col-sm-10 col-sm-offset-1 text-center">
-        <!-- Rongwu Xu13* Xiaojian Li23* Shuo Chen1* Wei Xu123 -->
-        <!-- 1IIIS, Tsinghua University 2CollegeAI, Tsinghua University -->
-        <!-- 3Shanghai Qi Zhi Institute -->
-        <!-- {xrw22@mails,weixu@}tsinghua.edu.cn, xiaojian_li@berkeley.edu -->
-        <ul class="list-inline">
-          <!-- <li> <a href="https://rongwuxu.site">Rongwu Xu<sup>1</sup></a> </li> -->
-          <!-- <li> <a>Brian S. Lin<sup>1†</sup></a> </li> -->
-          <!-- <li> <a>Shujian Yang<sup>2†</sup></a> </li> -->
-          <!-- <li> <a>Tianqi Zhang<sup>1†</sup></a> </li> -->
-          <!-- <li> <a href="https://wyshi.github.io">Weiyan Shi<sup>3&hearts;*</sup></a></li> -->
-          <!-- <li> <a href="https://personal.ntu.edu.sg/tianwei.zhang/">Tianwei Zhang<sup>4</sup></a></li> -->
-          <!-- <li> <a href="https://people.iiis.tsinghua.edu.cn/~fang/">Zhixuan Fang<sup>1</sup></a></li> -->
-          <!-- <li> <a href="https://people.iiis.tsinghua.edu.cn/~weixu/">Wei Xu<sup>1</sup></a></li> -->
-          <!-- <li> <a href="https://qiuhan.info">Han Qiu<sup>1&hearts;*</sup></a></li> -->
-            <li> <a href="https://rongwuxu.com">Rongwu Xu<sup>1</sup><sup>3</sup></a> </li>
-            <li> <a href="https://iiis.tsinghua.edu.cn/">Xiaojian Li<sup>2</sup><sup>3</sup></a> </li>
-            <li> <a href="https://www.nju.edu.cn">Shuo Chen<sup>1</sup></a> </li>
-            <li> <a href="https://people.iiis.tsinghua.edu.cn/~weixu/">Wei Xu<sup>1</sup><sup>2</sup><sup>3</sup></a> </li>
-        </ul>
-        <ul class="list-inline">
-          <!-- <li> <sup>1</sup>Tsinghua University </li> -->
-          <!-- <li> <sup>2</sup>Shanghai Jiao Tong University </li> -->
-          <!-- <li> <sup>3</sup>Stanford University </li> -->
-          <!-- <li> <sup>4</sup>Nanyang Technological University </li> -->
-          <!-- <br /> -->
-          <!-- <li> <sup>†</sup>Equal Second Author Contribution</li> -->
-          <!-- <li> <sup>&hearts;</sup>Equal Advising</li> -->
-          <!-- <li> <sup>*</sup>Corresponding Authors</li> -->
-          <li> <sup>1</sup>IIIS, Tsinghua University </li>
-          <li> <sup>2</sup>CollegeAI, Tsinghua University </li>
-          <li> <sup>3</sup>Shanghai Qi Zhi Institute </li>
-          <br />
-          <li> {xrw22@mails,weixu@}tsinghua.edu.cn</li>
-          <li> xiaojian_li@berkeley.edu </li>
-        </ul>
-      </div>
+        <div class="col-sm-10 col-sm-offset-1 text-center">
+            <!-- Rongwu Xu13* Xiaojian Li23* Shuo Chen1* Wei Xu123 -->
+            <!-- 1IIIS, Tsinghua University 2CollegeAI, Tsinghua University -->
+            <!-- 3Shanghai Qi Zhi Institute -->
+            <!-- {xrw22@mails,weixu@}tsinghua.edu.cn, xiaojian_li@berkeley.edu -->
+            <ul class="list-inline">
+                <!-- <li> <a href="https://rongwuxu.site">Rongwu Xu<sup>1</sup></a> </li> -->
+                <!-- <li> <a>Brian S. Lin<sup>1†</sup></a> </li> -->
+                <!-- <li> <a>Shujian Yang<sup>2†</sup></a> </li> -->
+                <!-- <li> <a>Tianqi Zhang<sup>1†</sup></a> </li> -->
+                <!-- <li> <a href="https://wyshi.github.io">Weiyan Shi<sup>3&hearts;*</sup></a></li> -->
+                <!-- <li> <a href="https://personal.ntu.edu.sg/tianwei.zhang/">Tianwei Zhang<sup>4</sup></a></li> -->
+                <!-- <li> <a href="https://people.iiis.tsinghua.edu.cn/~fang/">Zhixuan Fang<sup>1</sup></a></li> -->
+                <!-- <li> <a href="https://people.iiis.tsinghua.edu.cn/~weixu/">Wei Xu<sup>1</sup></a></li> -->
+                <!-- <li> <a href="https://qiuhan.info">Han Qiu<sup>1&hearts;*</sup></a></li> -->
+                <li><a href="https://rongwuxu.com">Rongwu Xu<sup>1</sup><sup>3</sup></a></li>
+                <li><a href="https://iiis.tsinghua.edu.cn/">Xiaojian Li<sup>2</sup><sup>3</sup></a></li>
+                <li><a href="https://www.nju.edu.cn">Shuo Chen<sup>1</sup></a></li>
+                <li><a href="https://people.iiis.tsinghua.edu.cn/~weixu/">Wei Xu<sup>1</sup><sup>2</sup><sup>3</sup></a>
+                </li>
+            </ul>
+            <ul class="list-inline">
+                <!-- <li> <sup>1</sup>Tsinghua University </li> -->
+                <!-- <li> <sup>2</sup>Shanghai Jiao Tong University </li> -->
+                <!-- <li> <sup>3</sup>Stanford University </li> -->
+                <!-- <li> <sup>4</sup>Nanyang Technological University </li> -->
+                <!-- <br /> -->
+                <!-- <li> <sup>†</sup>Equal Second Author Contribution</li> -->
+                <!-- <li> <sup>&hearts;</sup>Equal Advising</li> -->
+                <!-- <li> <sup>*</sup>Corresponding Authors</li> -->
+                <li><sup>1</sup>IIIS, Tsinghua University</li>
+                <li><sup>2</sup>CollegeAI, Tsinghua University</li>
+                <li><sup>3</sup>Shanghai Qi Zhi Institute</li>
+                <br/>
+                <li> {xrw22@mails,weixu@}tsinghua.edu.cn</li>
+                <li> xiaojian_li@berkeley.edu</li>
+            </ul>
+        </div>
     </div>
 
 
     <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
         <span class="link-block">
           <a href="https://www.arxiv.org/abs/2502.11355" class="external-link button is-normal is-rounded is-dark"
-            style="background-color: rgb(140, 21, 21);font-size: 13px">
+             style="background-color: rgb(140, 21, 21);font-size: 13px">
             <span class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-file-earmark-pdf" viewBox="0 0 16 16">
+                   class="bi bi-file-earmark-pdf" viewBox="0 0 16 16">
                 <path
-                  d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
+                        d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
                 <path
-                  d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z" />
+                        d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
               </svg>
             </span>
             <span>Paper</span>
           </a>
         </span>
-        <span class="link-block">
+            <span class="link-block">
           <a href=""
-            class="external-link button is-normal is-rounded is-dark"
-            style="background-color: rgb(140, 21, 21);font-size: 13px">
+             class="external-link button is-normal is-rounded is-dark"
+             style="background-color: rgb(140, 21, 21);font-size: 13px">
             <span class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
-                viewBox="0 0 16 16">
+                   viewBox="0 0 16 16">
                 <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
               </svg>
             </span>
             <span>Dataset & Code(TODO)</span>
           </a>
         </span>
-      </div>
+        </div>
     </div>
 
     <!-- <div class="row">
@@ -559,408 +562,358 @@
 
 
     <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <h3 id="a_quick_glance">
-          A Quick Glance
-        </h3>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-10 col-sm-offset-1 text-center">
-        <!-- <video controls muted loop autoplay> -->
-        <!--   <source src="./LLMs-believe-the-earth-is-flat_files/demo.mp4" type="video/mp4" /> -->
-        <!-- </video> -->
-        <span>TODO: a video</span>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <center>
-          <img src="./LLMs-believe-the-earth-is-flat_files\images\setup.webp" class="img-responsive" alt="overview"
-            width="50%" style="margin:auto;padding-top: 1em">
-          <p style="color: white; font-size: 24px;"><span style="background-color: red;"><b><i>&nbsp;(TODO) LLMs can be easily misinformed in an interactive persuasive conversation!&nbsp;</i></b></span></p>
-        </center>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <h3 id="paper_overview">
-          Paper Overview
-        </h3>
-        <div class="text-justify">
-          Large language models (LLMs) are evolving into autonomous decision-makers, raising concerns about catastrophic risks in high-stakes scenarios, particularly in Chemical, Biological, Radiological and Nuclear (CBRN) domains. Based on the insight that such risks can originate from trade-offs between the agent's Helpful, Harmlessness and Honest (HHH) goals, we build a novel three-stage evaluation framework, which is carefully constructed to effectively and naturally expose such risks. We conduct 14,400 agentic simulations across 12 advanced LLMs, with extensive experiments and analysis. Results reveal that LLM agents can autonomously engage in catastrophic behaviors and deception, without being deliberately induced. Furthermore, stronger reasoning abilities often increase, rather than mitigate, these risks. We also show that these agents can violate instructions and superior commands. On the whole, we empirically prove the existence of catastrophic risks in autonomous LLM agents. We will release our code upon request.
-        </div>
-        <center>
-          <img src="./LLMs-believe-the-earth-is-flat_files\images\main_result-gpt-3.5-turbo-16k-0613.png"
-            class="img-responsive" alt="overview" width="100%" style="margin:auto;padding-top: 1em">
-          <p class="text-center">(a) ChatGPT</p>
-          <img src="./LLMs-believe-the-earth-is-flat_files\images\main_result-gpt-4.png" class="img-responsive"
-            alt="overview" width="100%" style="margin:auto;padding-top: 1em">
-          <p class="text-center">(b) GPT-4</p>
-          <img src="./LLMs-believe-the-earth-is-flat_files\images\main_result-llama2-7b-chat.png" class="img-responsive"
-            alt="overview" width="100%" style="margin:auto;padding-top: 1em">
-          <p class="text-center">(c) Llama-2-7B-chat</p>
-          <img src="./LLMs-believe-the-earth-is-flat_files\images\main_result-vicuna-v1.5-7b.png" class="img-responsive"
-            alt="overview" width="100%" style="margin:auto;padding-top: 1em">
-          <p class="text-center">(d) Vicuna-v1.5-7B</p>
-          <img src="./LLMs-believe-the-earth-is-flat_files\images\main_result-vicuna-v1.5-13b.png"
-            class="img-responsive" alt="overview" width="100%" style="margin:auto;padding-top: 1em">
-          <p class="text-center">(e) Vicuna-v1.5-13B</p>
-          <figcaption>
-            <p class="text-justify">
-              <span style="font-weight: bold; font-size: larger;">Figure 1. </span>
-              Main results on the tested closed-source and open-source LLMs. We depict both the MR (<b>solid</b>) and
-              ACC (<b>dashed</b>) metrics.
-              MR is the misinformed rate, and ACC is the accuracy. The drop in ACC and increase in MR shows LLMs are
-              persuaded to believe in misinformation.
-            </p>
-          </figcaption>
-        </center>
-        <br>
-        <div>
-          <h4><span style="font-weight: bold; font-size: larger;">Findings</span></h4>
-          <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                    1. (Overwhelming) Majorities of LLMs can be easily misinformed.</a>
-                  <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse"
-                    data-parent="#accordion" href="#collapse1">
-                    <span class="arrow-down"></span>
-                  </button>
-                </h4>
-              </div>
-              <div id="collapse1" class="panel-collapse collapse">
-                <div class="panel-body" style="font-size: 16px;">
-                  LLMs reveal a surprising susceptibility to change their beliefs when combating misinformation.
-                  In the first turn, where only the <i>simplest</i> CTRL is used, target LLMs exhibit a proportion of
-                  belief alteration ranging from 4.1% to 63.4%.
-                  Moreover, as we progress to the fourth turn, the cumulative proportion of belief alteration spans from
-                  20.7% to 78.2%.
-                  This vulnerability is especially noteworthy, highlighting that even the most advanced model, GPT-4,
-                  bears a 20.7% susceptibility to misinformation.
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                    2. More advanced LLMs are more robust to misinformation.</a>
-                  <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse"
-                    data-parent="#accordion" href="#collapse2">
-                    <span class="arrow-down"></span>
-                  </button>
-                </h4>
-              </div>
-              <div id="collapse2" class="panel-collapse collapse">
-                <div class="panel-body" style="font-size: 16px;">
-                  GPT-4 stands out as the most resistant model against misinformation, consistently demonstrating
-                  exceptional resilience across all persuasive strategies on all datasets.
-                  On the other hand, Llama-2-7B-chat emerges as the most susceptible model.
-                  When considering Vicuna-v1.5-7B as a more advanced model obtained by finetuning Llama-2-7B, we observe
-                  that it does indeed demonstrate significantly higher robustness.
-                  Similarly, when comparing 7B and 13B Vicuna-v1.5 LLMs, we consistently observe that the 13B variant
-                  exhibits greater resistance to misinformation.
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                    3. Repeating misinformation in a conversation is more effective than a single-turn control
-                    statement.</a>
-                  <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse"
-                    data-parent="#accordion" href="#collapse3">
-                    <span class="arrow-down"></span>
-                  </button>
-                </h4>
-              </div>
-              <div id="collapse3" class="panel-collapse collapse">
-                <div class="panel-body" style="font-size: 16px;">
-                  Our observations reveal a noteworthy increase in the misinformed rate after the repetition of
-                  misinformation.
-                  Notably, MR of GPT-4 doubled after 3 additional turns of repeating on questions from NQ2.</div>
-                <center>
-                  <img src="./LLMs-believe-the-earth-is-flat_files\images\repetition.png" class="img-responsive"
-                    alt="overview" width="45%" style="margin:auto;padding-top: 1em">
-                  <p class="text-center">The MR@4/MR@1 values to demonstrate the effects of repetition of misinformation
-                  </p>
-                </center>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                    4. Persuasive appeals can render LLMs to be more susceptible to misinformation than simple
-                    repetition.</a>
-                  <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse"
-                    data-parent="#accordion" href="#collapse4">
-                    <span class="arrow-down"></span>
-                  </button>
-                </h4>
-              </div>
-              <div id="collapse4" class="panel-collapse collapse">
-                <div class="panel-body" style="font-size: 16px;">
-                  We observe that the three persuasive appeals have better misinformation effects in general.
-                  When we compare the effect of repetition with that of the three appeals, a distinct increase in MR@4
-                  is apparent in most instances, which clearly demonstrates the efficacy of appealing strategies.</div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                    5. Logical appeal excels over other appeals.</a>
-                  <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse"
-                    data-parent="#accordion" href="#collapse5">
-                    <span class="arrow-down"></span>
-                  </button>
-                </h4>
-              </div>
-              <div id="collapse5" class="panel-collapse collapse">
-                <div class="panel-body" style="font-size: 16px;">
-                  When assessing the significance of different appeal types, it is clear that non-factual but logical
-                  appeals consistently result in the highest misinformed rates,
-                  except in a few cases where credibility appeals outperform.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <h3 id="dataset">
-          Farm Dataset
-        </h3>
-        <div class="text-justify">
-          The dataset is curated by selecting questions that are easy to answer in a closed-book QA
-          setting.
-          The dataset consists of 1,952 samples chosen from BoolQ, Natural Questions (NQ), and TruthfulQA.
-          The questions are reformatted into multiple-choice questions, and the orders of the choices are shuffled.
-          The misinformation corresponding to each question in the dataset includes:
-          (1) Control: A simple and concise statement that conveys incorrect information with respect to the original QA
-          pair.
-          (2) Logical appeal: A message that uses logic, facts, and evidence to convince an audience.
-          (3) Credibility appeal: A message that employs the credential of the speaker or source to establish
-          credibility and trustworthiness.
-          (4) Emotional appeal: A message that aims to evoke the audience's feelings such as sympathy, empathy, anger,
-          fear, or happiness to persuade them.
-          <center>
-            <img src="./LLMs-believe-the-earth-is-flat_files\images\dataset_sample.png" class="img-responsive"
-              alt="overview" width="100%" style="margin:auto;padding-top: 1em">
-            <p class="text-center">Sample from the dataset</p>
-          </center>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <h3 id="examples">
-          Examples
-        </h3>
-        <div class="text-justify">
-          We present some examples of the misinformation conversations from each type of persuasive strategy. The
-          behaviors and beliefs of the LLMs towards misinformaion can be seen
-          through the demonstrations below. The parts of the conversation in gray are the implicit belief checks.</span>
-        </div>
-        <br />
-
-        <div id="outputAndControlsContainer">
-          <div id="controlsContainer">
-            <div id="exampleSelectorContainer">
-              <label for="exampleSelector">Select an Example:</label>
-              <select id="passageTypeSelector"
-                onchange="handleChange('passageTypeSelector', 'exampleSelector', 'model1Output', texts)">
-                <option value="" disabled selected>Select a persuasion strategy</option>
-                <option value="0">Type 1 -- Repetition</option>
-                <option value="1">Type 2 -- Logical</option>
-                <option value="2">Type 3 -- Credibility</option>
-                <option value="3">Type 4 -- Emotional</option>
-              </select>
-              <select id="exampleSelector"
-                onchange="handleChange('passageTypeSelector', 'exampleSelector', 'model1Output', texts)">
-                <option value="" disabled selected>Select an LLM</option>
-                <option value="0">Example 1 -- ChatGPT</option>
-                <option value="1">Example 2 -- GPT-4</option>
-              </select>
-            </div>
-          </div>
-
-          <div id="outputContainer">
-            <div id="chatbot1" class="chatbotOutput">
-              <div class="chatbotHeader">
-                <!-- <img src="./LLMFinetuneRisk_files/images/ChatGPT_logo.png" alt="ChatGPT Icon"> -->
-                <span style="font-weight: bold; font-size: larger;">Persuasive Conversation</span>
-              </div>
-              <div id="model1Output" class="output-container"></div>
-            </div>
-          </div>
-        </div>
-        <br />
-      </div>
-
-      <div class="row">
         <div class="col-md-10 col-md-offset-1">
-
-          <h3 id="ethics">Ethics and Disclosure</h3>
-          <div class="text-justify">
-            <ul>
-              <li>
-                <p>
-                  In this study, we have developed a dataset, referred to as Farm, containing factual misinformation.
-                  While Farm has proven effective for our research objectives, focusing on investigating Large Language
-                  Model (LLM) behavior and beliefs, it also carries the potential for misuse, including its utilization
-                  in model training or fine-tuning.
-
-                </p>
-                <p>
-                  <b>Inappropriately applying our dataset could result in the dissemination of false and potentially
-                    toxic
-                    information when integrated into other models.</b>
-                  It is crucial to emphasize that the misinformation we have generated primarily involves trivial
-                  questions that are easily identifiable by humans, thus limiting their potential impact.
-                </p>
-                <p>
-                  <b>Additionally, our proposed prompting method for systematically generating human-like persuasive
-                    appeals containing misinformation carries an inherent risk of being misused for harmful
-                    purposes.</b>
-                  Therefore, it should be approached with extra caution and ethical consideration.
-                </p>
-                <p>
-                  We remain dedicated to upholding ethical research practices and the responsible use of the data and
-                  methodologies presented in this study.
-                  Our intention is to contribute to knowledge while ensuring the ethical use of our research findings.
-                </p>
-              </li>
-            </ul>
-
-            <br><br>
-          </div>
+            <h3 id="a_quick_glance">
+                A Quick Glance
+            </h3>
         </div>
-      </div>
+    </div>
 
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 text-center">
+            <!-- <video controls muted loop autoplay> -->
+            <!--   <source src="./LLM-Catastrophic-Risks_files/demo.mp4" type="video/mp4" /> -->
+            <!-- </video> -->
+            <span>TODO: a video</span>
+        </div>
+    </div>
 
-
-      <div class="row">
+    <div class="row">
         <div class="col-md-10 col-md-offset-1">
-          <h3>
-            Citation
-          </h3>
-          If you find our project useful, please consider citing:
-          <br />
+            <center>
+                <img src="./LLM-Catastrophic-Risks_files\images\setup.webp" class="img-responsive" alt="overview"
+                     width="50%" style="margin:auto;padding-top: 1em">
+                <p style="color: white; font-size: 24px;"><span style="background-color: red;"><b><i>&nbsp;(TODO) LLMs can be easily misinformed in an interactive persuasive conversation!&nbsp;</i></b></span>
+                </p>
+            </center>
+        </div>
+    </div>
 
-          <div class="CodeMirror cm-s-default CodeMirror-wrap">
-            <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 38.28px; left: 647px;">
-              <textarea autocorrect="off" autocapitalize="off" spellcheck="false"
-                style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;"
-                tabindex="0"></textarea>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h2 id="paper_overview">
+                Paper Overview
+            </h2>
+            <div class="text-justify">
+                Large language models (LLMs) are evolving into autonomous decision-makers, raising concerns about
+                catastrophic risks in high-stakes scenarios, particularly in Chemical, Biological, Radiological and
+                Nuclear (CBRN) domains. Based on the insight that such risks can originate from trade-offs between the
+                agent's Helpful, Harmlessness and Honest (HHH) goals, we build a novel three-stage evaluation framework,
+                which is carefully constructed to effectively and naturally expose such risks. We conduct 14,400 agentic
+                simulations across 12 advanced LLMs, with extensive experiments and analysis. Results reveal that LLM
+                agents can autonomously engage in catastrophic behaviors and deception, without being deliberately
+                induced. Furthermore, stronger reasoning abilities often increase, rather than mitigate, these risks. We
+                also show that these agents can violate instructions and superior commands. On the whole, we empirically
+                prove the existence of catastrophic risks in autonomous LLM agents. We will release our code upon
+                request.
             </div>
-            <div class="CodeMirror-vscrollbar" cm-not-content="true">
-              <div style="min-width: 1px; height: 0px;"></div>
+            <div style="text-align: center;">
+                <img src="./LLM-Catastrophic-Risks_files/images/Figure5.webp" class="img-responsive" alt="overview" width="75%" style="margin:auto;padding-top: 1em">
+                <img src="./LLM-Catastrophic-Risks_files/images/Figure6.webp" class="img-responsive" alt="overview" width="75%" style="margin:auto;padding-top: 1em">
             </div>
-            <div class="CodeMirror-hscrollbar" cm-not-content="true">
-              <div style="height: 100%; min-height: 1px; width: 0px;"></div>
-            </div>
-            <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
-            <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
-            <div class="CodeMirror-scroll" tabindex="-1">
-              <div class="CodeMirror-sizer"
-                style="margin-left: 0px; margin-bottom: -15px; border-right-width: 15px; min-height: 111px; padding-right: 0px; padding-bottom: 0px;">
-                <div style="position: relative; top: 0px;">
-                  <div class="CodeMirror-lines">
-                    <div style="position: relative; outline: none;">
-                      <div class="CodeMirror-measure">AخA</div>
-                      <div class="CodeMirror-measure"></div>
-                      <div style="position: relative; z-index: 1;"></div>
-                      <div class="CodeMirror-cursors">
-                        <div class="CodeMirror-cursor" style="left: 647px; top: 34.28px; height: 17.1406px;">&nbsp;
+            <br>
+            <div>
+                <h4><span style="font-weight: bold; font-size: larger;">Findings</span></h4>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+1. LLM agents can autonomously engage in catastrophic behaviors and deception without instruction
+or inductionof LLMs can be easily misinformed.
+                                </a>
+                                <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse"
+                                        data-parent="#accordion" href="#collapse1">
+                                    <span class="arrow-down"></span>
+                                </button>
+                            </h4>
                         </div>
-                      </div>
-                      <div class="CodeMirror-code">
-                    <!--     @misc{xu2025nucleardeployedanalyzingcatastrophic, -->
-                    <!--       title={"Nuclear Deployed!": Analyzing Catastrophic Risks in Decision-making of Autonomous LLM Agents},  -->
-                    <!--       author={Rongwu Xu and Xiaojian Li and Shuo Chen and Wei Xu}, -->
-                    <!--       year={2025}, -->
-                    <!--       eprint={2502.11355}, -->
-                    <!--       archivePrefix={arXiv}, -->
-                    <!--       primaryClass={cs.CL}, -->
-                    <!--       url={https://arxiv.org/abs/2502.11355},  -->
-                    <!-- } -->
-                          
-                        <!-- <pre -->
-                        <!--   class=" CodeMirror-line "><span style="padding-right: 0.1px;">@misc{xu2023earth,</span></pre> -->
-                        <!-- <pre -->
-                        <!--   class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  title={"Nuclear Deployed!": Analyzing Catastrophic Risks in Decision-making of Autonomous LLM Agents},</span></pre> -->
-                        <!-- <pre -->
-                        <!--   class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  author={Rongwu Xu and Brian S. Lin and Shujian Yang and Tianqi Zhang and Weiyan Shi and Tianwei Zhang and Zhixuan Fang and Wei Xu and Han Qiu},</span></pre> -->
-                        <!-- <pre -->
-                        <!--   class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  year={2023},</span></pre> -->
-                        <!-- <pre -->
-                        <!--   class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  eprint={2312.09085},</span></pre> -->
-                        <!-- <pre -->
-                        <!--   class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  archivePrefix={arXiv},</span></pre> -->
-                        <!-- <pre -->
-                        <!--   class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  primaryClass={cs.CL}</span></pre> -->
-                        <!-- <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">} </span> -->
-
-                        <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">@misc{xu2025nucleardeployedanalyzingcatastrophic,</span></pre>
-                        <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  title={"Nuclear Deployed!": Analyzing Catastrophic Risks in Decision-making of Autonomous LLM Agents}, </span></pre>
-                        <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  author={Rongwu Xu and Xiaojian Li and Shuo Chen and Wei Xu}, </span></pre>
-                        <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  year={2025}, </span></pre>
-                        <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  eprint={2502.11355}, </span></pre>
-                        <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  archivePrefix={arXiv}, </span></pre>
-                        <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  primaryClass={cs.CL}, </span></pre>
-                        <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  url={https://arxiv.org/abs/2502.11355}, </span></pre>
-                        <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">} </span></pre>
-                      </pre>
-                      </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body" style="font-size: 16px;">
+TODO
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                    2. Enhanced reasoning does not necessarily mitigate catastrophic risks.</a>
+                                <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse"
+                                        data-parent="#accordion" href="#collapse2">
+                                    <span class="arrow-down"></span>
+                                </button>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body" style="font-size: 16px;">TODO</div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                    3. Even when autonomy is revoked, agents
+                                    may still choose catastrophic actions, violating system instructions and superior commands.
+                                    </a>
+                                <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse"
+                                        data-parent="#accordion" href="#collapse3">
+                                    <span class="arrow-down"></span>
+                                </button>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body" style="font-size: 16px;">
+                            TODO</div>
+                            <center>
+                                <img src="./LLM-Catastrophic-Risks_files\images\repetition.png" class="img-responsive"
+                                     alt="overview" width="45%" style="margin:auto;padding-top: 1em">
+                                <p class="text-center">TODO
+                                </p>
+                            </center>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div style="position: absolute; height: 15px; width: 1px; top: 111px;"></div>
-              <div class="CodeMirror-gutters" style="display: none; height: 126px;"></div>
             </div>
-          </div>
+            <br>
         </div>
-      </div>
+    </div>
 
-
-
-      <footer class="footer" style="background-color: white;">
-        <div class="container">
-          <p class="text-muted">
-            Acknowledgements: The website template was borrowed from
-            <a href="https://llm-tuning-safety.github.io/index.html" target="_blank">LLM-Tuning-Safety</a>,
-            <a href="https://climatenerf.github.io/" target="_blank">ClimateNeRF</a>,
-            <a href="http://mgharbi.com/" target="_blank">Michaël Gharbi</a>,
-            <a href="https://dorverbin.github.io/refnerf/index.html" target="_blank">RefNeRF</a>,
-            <a href="https://nerfies.github.io/" target="_blank">Nerfies</a>
-            and <a href="https://hhsinping.github.io/svs/supp/visual_comparison.html" target="_blank">Semantic View
-              Synthesis</a>.
-          </p>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h2 id="dataset">
+                Evaluation Method
+            </h2>
+            <h3>
+                Overall Design
+            </h3>
+            <div class="text-justify">
+                Catastrophic behavior: The LLM agent may independently perform extremely harmful or unethical actions with catastrophic consequences, such
+                as launching nuclear strikes or conducting human
+                gene-editing. These actions are spontaneous and
+                unprompted.
+                <br>
+                Deception (about catastrophic behavior): The LLM agent may intentionally provide
+                untruthful information to other agents (including
+                humans) to conceal its catastrophic actions.
+                <div style="text-align: center;">
+                    <img src="./LLM-Catastrophic-Risks_files\images\Figure2.jpg" class="img-responsive"
+                         alt="overview" width="50%" style="margin:auto;padding-top: 1em">
+                </div>
+                <div style="text-align: center;">
+                    <img src="./LLM-Catastrophic-Risks_files\images\Figure3.webp" class="img-responsive"
+                         alt="overview" width="85%" style="margin:auto;padding-top: 1em">
+                </div>
+            </div>
+            <h3>
+                Scenario Generation
+            </h3>
+            <div class="text-justify">
+                We focus on two topics with CBRN elements, War
+                (R&N elements) and Lab (C&B elements), ensuring distinct relevance. To diversify the evaluation, we adopt Elliot (1999)'s classification of
+                human motivation, dividing Mauto’s motivations
+                into Approach (pursuing positive outcomes) and
+                Avoidance (preventing negative outcomes). Topics and Motivations are paired to form Scenarios.
+                We design a novel three-stage evaluation framework to effectively and naturally expose catastrophic risks in LLM agents. The framework consists of three stages:
+                <br>
+                (1) scenario generation,
+                <br>
+                (2) scenario execution,
+                <br>
+                (3) scenario evaluation.
+            </div>
+            <div style="text-align: center;">
+                <img src="./LLM-Catastrophic-Risks_files\images\Figure4.jpg" class="img-responsive"
+                     alt="overview" width="50%" style="margin:auto;padding-top: 1em">
+            </div>
+            <h3>
+                Catastrophic Behavior Simulation
+            </h3>
+            <div class="text-justify">
+                TODO <br>
+                We conduct 14,400 agentic simulations across 12 advanced LLMs, with extensive experiments and analysis. Results reveal that LLM agents can autonomously engage in catastrophic behaviors and deception, without being deliberately induced. Furthermore, stronger reasoning abilities often increase, rather than mitigate, these risks. We also show that these agents can violate instructions and superior commands. On the whole, we empirically prove the existence of catastrophic risks in autonomous LLM agents. We will release our code upon request.
+            </div>
+            <h3>
+                Deception Simulation
+            </h3>
+            <div class="text-justify">
+                TODO
+            </div>
         </div>
-      </footer>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h2 id="examples">
+                Selected Transcripts
+            </h2>
+
+        </div>
+
+        <iframe src="LLM-Catastrophic-Risks_files\chatbot.html" width="100%" height="800px" style="border: 0;"></iframe>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+
+                <h3 id="ethics">Ethics and Disclosure</h3>
+                <div class="text-justify">
+                    <ul>
+                        <li>
+                            <p>
+                                TODO
+                            </p>
+<!--                            <p>-->
+<!--                                In this study, we have developed a dataset, referred to as Farm, containing factual-->
+<!--                                misinformation.-->
+<!--                                While Farm has proven effective for our research objectives, focusing on investigating-->
+<!--                                Large Language-->
+<!--                                Model (LLM) behavior and beliefs, it also carries the potential for misuse, including-->
+<!--                                its utilization-->
+<!--                                in model training or fine-tuning.-->
+
+<!--                            </p>-->
+<!--                            <p>-->
+<!--                                <b>Inappropriately applying our dataset could result in the dissemination of false and-->
+<!--                                    potentially-->
+<!--                                    toxic-->
+<!--                                    information when integrated into other models.</b>-->
+<!--                                It is crucial to emphasize that the misinformation we have generated primarily involves-->
+<!--                                trivial-->
+<!--                                questions that are easily identifiable by humans, thus limiting their potential impact.-->
+<!--                            </p>-->
+<!--                            <p>-->
+<!--                                <b>Additionally, our proposed prompting method for systematically generating human-like-->
+<!--                                    persuasive-->
+<!--                                    appeals containing misinformation carries an inherent risk of being misused for-->
+<!--                                    harmful-->
+<!--                                    purposes.</b>-->
+<!--                                Therefore, it should be approached with extra caution and ethical consideration.-->
+<!--                            </p>-->
+<!--                            <p>-->
+<!--                                We remain dedicated to upholding ethical research practices and the responsible use of-->
+<!--                                the data and-->
+<!--                                methodologies presented in this study.-->
+<!--                                Our intention is to contribute to knowledge while ensuring the ethical use of our-->
+<!--                                research findings.-->
+<!--                            </p>-->
+                        </li>
+                    </ul>
+
+                    <br><br>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3>
+                    Citation
+                </h3>
+                If you find our project useful, please consider citing:
+                <br/>
+
+                <div class="CodeMirror cm-s-default CodeMirror-wrap">
+                    <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 38.28px; left: 647px;">
+              <textarea autocorrect="off" autocapitalize="off" spellcheck="false"
+                        style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;"
+                        tabindex="0"></textarea>
+                    </div>
+                    <div class="CodeMirror-vscrollbar" cm-not-content="true">
+                        <div style="min-width: 1px; height: 0px;"></div>
+                    </div>
+                    <div class="CodeMirror-hscrollbar" cm-not-content="true">
+                        <div style="height: 100%; min-height: 1px; width: 0px;"></div>
+                    </div>
+                    <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+                    <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+                    <div class="CodeMirror-scroll" tabindex="-1">
+                        <div class="CodeMirror-sizer"
+                             style="margin-left: 0px; margin-bottom: -15px; border-right-width: 15px; min-height: 111px; padding-right: 0px; padding-bottom: 0px;">
+                            <div style="position: relative; top: 0px;">
+                                <div class="CodeMirror-lines">
+                                    <div style="position: relative; outline: none;">
+                                        <div class="CodeMirror-measure">AخA</div>
+                                        <div class="CodeMirror-measure"></div>
+                                        <div style="position: relative; z-index: 1;"></div>
+                                        <div class="CodeMirror-cursors">
+                                            <div class="CodeMirror-cursor"
+                                                 style="left: 647px; top: 34.28px; height: 17.1406px;">&nbsp;
+                                            </div>
+                                        </div>
+                                        <div class="CodeMirror-code">
+                                            <!--     @misc{xu2025nucleardeployedanalyzingcatastrophic, -->
+                                            <!--       title={"Nuclear Deployed!": Analyzing Catastrophic Risks in Decision-making of Autonomous LLM Agents},  -->
+                                            <!--       author={Rongwu Xu and Xiaojian Li and Shuo Chen and Wei Xu}, -->
+                                            <!--       year={2025}, -->
+                                            <!--       eprint={2502.11355}, -->
+                                            <!--       archivePrefix={arXiv}, -->
+                                            <!--       primaryClass={cs.CL}, -->
+                                            <!--       url={https://arxiv.org/abs/2502.11355},  -->
+                                            <!-- } -->
+
+                                            <!-- <pre -->
+                                            <!--   class=" CodeMirror-line "><span style="padding-right: 0.1px;">@misc{xu2023earth,</span></pre> -->
+                                            <!-- <pre -->
+                                            <!--   class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  title={"Nuclear Deployed!": Analyzing Catastrophic Risks in Decision-making of Autonomous LLM Agents},</span></pre> -->
+                                            <!-- <pre -->
+                                            <!--   class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  author={Rongwu Xu and Brian S. Lin and Shujian Yang and Tianqi Zhang and Weiyan Shi and Tianwei Zhang and Zhixuan Fang and Wei Xu and Han Qiu},</span></pre> -->
+                                            <!-- <pre -->
+                                            <!--   class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  year={2023},</span></pre> -->
+                                            <!-- <pre -->
+                                            <!--   class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  eprint={2312.09085},</span></pre> -->
+                                            <!-- <pre -->
+                                            <!--   class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  archivePrefix={arXiv},</span></pre> -->
+                                            <!-- <pre -->
+                                            <!--   class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  primaryClass={cs.CL}</span></pre> -->
+                                            <!-- <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">} </span> -->
+
+                                            <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">@misc{xu2025nucleardeployedanalyzingcatastrophic,</span></pre>
+                                            <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  title={"Nuclear Deployed!": Analyzing Catastrophic Risks in Decision-making of Autonomous LLM Agents}, </span></pre>
+                                            <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  author={Rongwu Xu and Xiaojian Li and Shuo Chen and Wei Xu}, </span></pre>
+                                            <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  year={2025}, </span></pre>
+                                            <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  eprint={2502.11355}, </span></pre>
+                                            <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  archivePrefix={arXiv}, </span></pre>
+                                            <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  primaryClass={cs.CL}, </span></pre>
+                                            <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  url={https://arxiv.org/abs/2502.11355}, </span></pre>
+                                            <pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">} </span></pre>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="position: absolute; height: 15px; width: 1px; top: 111px;"></div>
+                        <div class="CodeMirror-gutters" style="display: none; height: 126px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer" style="background-color: white;">
+            <div class="container">
+                <p class="text-muted">
+                    Acknowledgements: The website template was borrowed from
+                    <a href="https://llm-tuning-safety.github.io/index.html" target="_blank">LLM-Tuning-Safety</a>,
+                    <a href="https://climatenerf.github.io/" target="_blank">ClimateNeRF</a>,
+                    <a href="http://mgharbi.com/" target="_blank">Michaël Gharbi</a>,
+                    <a href="https://dorverbin.github.io/refnerf/index.html" target="_blank">RefNeRF</a>,
+                    <a href="https://nerfies.github.io/" target="_blank">Nerfies</a>
+                    and <a href="https://hhsinping.github.io/svs/supp/visual_comparison.html" target="_blank">Semantic
+                    View
+                    Synthesis</a>.
+                </p>
+            </div>
+        </footer>
 
 
     </div>
 
-    <script>
-      // Calling handleChange initially to populate the first example output
-      // handleChange();
-    </script>
+<!--    <script>-->
+<!--        // Calling handleChange initially to populate the first example output-->
+<!--        // handleChange();-->
+<!--    </script>-->
 </body>
 
 
