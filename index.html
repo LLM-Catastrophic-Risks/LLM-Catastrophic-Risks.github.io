@@ -5,6 +5,7 @@
     <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
 
     <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
 
     <title>LLM Catastrophic Risks</title>
 
@@ -353,15 +354,18 @@
                 Autonomous LLM Agents</a>
         </div>
 
-        <!--    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
-        <!--      <ul class="nav navbar-nav">-->
-        <!--        <li> <a href="./index.html#a_quick_glance" style="color: white; font-weight: 500">A Quick Glance</a></li>-->
-        <!--        <li> <a href="./index.html#paper_overview" style="color: white; font-weight: 500">Paper Overview</a></li>-->
-        <!--        <li> <a href="./index.html#dataset" style="color: white; font-weight: 500">Dataset</a></li>-->
-        <!--        <li> <a href="./index.html#examples" style="color: white; font-weight: 500">Examples</a></li>-->
-        <!--        <li> <a href="./index.html#ethics" style="color: white; font-weight: 500">Ethics and Disclosure</a></li>-->
-        <!--      </ul>-->
-        <!--    </div>-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li> <a href="./index.html#a_quick_glance" style="color: white; font-weight: 500">A Quick Glance</a>
+                </li>
+                <li> <a href="./index.html#paper_overview" style="color: white; font-weight: 500">Main Results</a></li>
+                <li> <a href="./index.html#dataset" style="color: white; font-weight: 500">Methodology</a></li>
+                <li> <a href="./index.html#discussion" style="color: white; font-weight: 500">Discussion</a></li>
+                <li> <a href="./index.html#examples" style="color: white; font-weight: 500">Selected Transcripts</a>
+                </li>
+                <li> <a href="./index.html#ethics" style="color: white; font-weight: 500">Ethics Statement</a></li>
+            </ul>
+        </div>
 
         </div>
     </nav>
@@ -391,20 +395,7 @@
     <div class="container" id="main">
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1 text-center">
-                <!-- Rongwu Xu13* Xiaojian Li23* Shuo Chen1* Wei Xu123 -->
-                <!-- 1IIIS, Tsinghua University 2CollegeAI, Tsinghua University -->
-                <!-- 3Shanghai Qi Zhi Institute -->
-                <!-- {xrw22@mails,weixu@}tsinghua.edu.cn, xiaojian_li@berkeley.edu -->
                 <ul class="list-inline">
-                    <!-- <li> <a href="https://rongwuxu.site">Rongwu Xu<sup>1</sup></a> </li> -->
-                    <!-- <li> <a>Brian S. Lin<sup>1†</sup></a> </li> -->
-                    <!-- <li> <a>Shujian Yang<sup>2†</sup></a> </li> -->
-                    <!-- <li> <a>Tianqi Zhang<sup>1†</sup></a> </li> -->
-                    <!-- <li> <a href="https://wyshi.github.io">Weiyan Shi<sup>3&hearts;*</sup></a></li> -->
-                    <!-- <li> <a href="https://personal.ntu.edu.sg/tianwei.zhang/">Tianwei Zhang<sup>4</sup></a></li> -->
-                    <!-- <li> <a href="https://people.iiis.tsinghua.edu.cn/~fang/">Zhixuan Fang<sup>1</sup></a></li> -->
-                    <!-- <li> <a href="https://people.iiis.tsinghua.edu.cn/~weixu/">Wei Xu<sup>1</sup></a></li> -->
-                    <!-- <li> <a href="https://qiuhan.info">Han Qiu<sup>1&hearts;*</sup></a></li> -->
                     <li><a href="https://rongwuxu.com">Rongwu Xu<sup>1</sup><sup>3</sup></a></li>
                     <li><a href="https://scholar.google.com/citations?user=Ehfmt54AAAAJ&hl=en">Xiaojian
                             Li<sup>2</sup><sup>3</sup></a></li>
@@ -414,14 +405,6 @@
                     </li>
                 </ul>
                 <ul class="list-inline">
-                    <!-- <li> <sup>1</sup>Tsinghua University </li> -->
-                    <!-- <li> <sup>2</sup>Shanghai Jiao Tong University </li> -->
-                    <!-- <li> <sup>3</sup>Stanford University </li> -->
-                    <!-- <li> <sup>4</sup>Nanyang Technological University </li> -->
-                    <!-- <br /> -->
-                    <!-- <li> <sup>†</sup>Equal Second Author Contribution</li> -->
-                    <!-- <li> <sup>&hearts;</sup>Equal Advising</li> -->
-                    <!-- <li> <sup>*</sup>Corresponding Authors</li> -->
                     <li><sup>1</sup>IIIS, Tsinghua University</li>
                     <li><sup>2</sup>CollegeAI, Tsinghua University</li>
                     <li><sup>3</sup>Shanghai Qi Zhi Institute</li>
@@ -468,99 +451,6 @@
             </div>
         </div>
 
-        <!-- <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <h3 id="a_quick_glance">
-          Media Coverage
-        </h3>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 text-center">
-        <span class="link-block">
-            <a href="https://www.nytimes.com/2023/10/19/technology/guardrails-artificial-intelligence-open-source.html" class="external-link button is-normal is-rounded is-dark" style="background-color: white; color: black;  border: 1px solid black; font-size: 13px">
-                <span class="icon">
-                    <img src="https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png" alt="New York Times Logo" width="16" height="16"/>
-                </span>
-                <span> New York Times (Exclusive)</span>
-            </a>
-        </span>
-        <span class="link-block">
-            <a href="https://www.pcmag.com/news/ai-safeguards-are-pretty-easy-to-bypass" class="external-link button is-normal is-rounded is-dark" style="background-color: #d6d6d6; color: black;  border: 1px solid black; font-size: 13px">
-                <span class="icon">
-                    <img src="https://world.pcmag.com/images/flag-2020/pcm-wip-2020-sq.png" alt="PCMag Logo" width="20" height="20"/>
-                </span>
-                <span> PCMag</span>
-            </a>
-        </span>
-
-        <span class="link-block">
-            <a href="https://venturebeat.com/ai/uh-oh-fine-tuning-llms-compromises-their-safety-study-finds/" class="external-link button is-normal is-rounded is-dark" style="background-color: black; color: white;  border: 1px solid black; font-size: 13px">
-                <span class="icon">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAw1BMVEURERHsHiX///8AAAAAEBDzHyaAgIB3FhmqGR7gHiQNDQ3vHiUEBATs7OxGRkbW1tbw2tvrAAexsbFjFRccHByxGh/2HyYLERHoHiXSHSP5+fmkGR3KHCLc3NzZHSO+vr67GyChoaFvFhjNzc00NDTv7++RkZFzc3O2traWGBxWFBYwExO6GyCDFxspEhNfFRc6OjoqKipLS0uUlJQ8ExR4eHhWVlZFExVpaWl4bm92CQ2LFxshEhK1o6SvAQ0YERFOFBbgVmb/AAAHkUlEQVR4nO2cbVubSBSGQUANE9tdXyBvvtRqaxK12sba3brb/v9ftYSQBMg8E2BOuqbXc39s4bq4nRnmnDOHOA4hhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBDyiwi9yuRvq3iLX5M4jsUFH3er8pQX/Fbplr/+3qvB5Wg0Gc9VxQzbn3eqcn0cLg1PK93yx59BHZRy3U7n7Lb/fSRn2X5T2fAgb/i2oqFbH6VUEEXdk8sXEclXaDj3jDq3R77/+xqmlsHZnbXjqzZMHT9ZTtVXbpg4Rvt2w/jqDV036N7bKG6BoavOxhaK22CYKFqsxa0wdIOL5oO4HYZutNdYcUsMVeul6TzdEkM36DcdxG0xdDv3DQdxawyD7w0HcWsMkx3jNzd0o+dmiv+7ocpYf2HDd00Nw2Y5/jqBwaA7pdVSUWDUVN1mhuHD+eGUHn7M9+kFhzeHecN3s9sOz8FN6X/f/PNvf8YAPXwrq8s4P17GlxeRyVE5zd6mWa0NPWnCzbxwFuZum//bF3BTqda2jw1njx0n+P5kEBgMP9mkGN5HbHhQUCvdB9bjeaH06JgMC9f5J1ix8X6REl4ZpumbNrytDW752MzQif0unKhNXzUZppfjrgfvQkPvFIe9sqHjT7DhrZ3hLjY8x4aH+jvel+6obuj4J+hSZZFCJbQfsOFBiBaid6C/44OF4RFaiU23i8XDGna4B7AQ4WZavqGGYXzf2swYJjscNkQLEU3t0/L1NQwd/wxca2vYvsKGaCF67/XXf9mM4b5lcRitqYSe3jB0rvXXf92IYTC0NTRM00ftq8YD51YHK38QGcPmtZrseQ0x+Mq0M/5NDm0MDW+aseVJVGiYpuX9LTMEr9+VSSqyW6jV4a6LdwMNe7rQNPTQxSuX1jG8QC8au6AtNfwGDTXDgq/XvHlrRG0jdGXTHD9H6OBpWg5SUkMQsn2zMPRfOmgIB/aHpY4hSdQtRE+/V/Sc1Rld0TD2Jy10YXAkYfgEDfMVjAwUsun+GMYMOO0wSRNgf4hG0DqgmRE6OElcXYjeB/2VuhBvXY4/bbwYX+53DBn+RMIQRmE7uh0RXNy70oTp2NCNFpgKUSJz1DEmiStzLzzWL8O3uq3TYFgJ64Bt8dQhNOyVc0Tva9XBtjcUEzTWMj6XnhyFbNqijpWhsg5I848N3h4J78qG+pBtNeq2NQzO7Lf6JYYksbS+wsdqfwhbQ+X2Y0HBJNTEtYzio6Mq2xtRQxVdPAu2KaYPjmrY5R0RxD8gV25oqAYjgca2kiFuxizOP08fHNxIGqphLNloOsOQJBbKS2jB6nKQxoZu0Lm4/CHtiBKGZALmQ1Pw0r3WRN0WhtOdotUfyzqijXynmBWBjRMV5Wx2CxX0f8i+TWH0nVuIYai/6uMGDKeT9VJSEdcycgsRpPc9fU3OOmpLhlFwpuJaRu9q8fwgZNMXrOwNk2E8kVREhrmFCAIDXa1DxnCqKGcIaxmLOig6qEKTVMDQjaxOgIuGsJaxWIjgkpUDmSqGKodRUclk+Q6OqXeWJ7tgmPVRt9mwczLndtANTL0YIsW27PlhLSNbiCjweYTn/aY6TZ6f+y52DMT2DFzLyBYiqLLpU8O1hoXr/PtbWI2yPQNe0n5Am37mABKQ1QOZ2obTkukQK1o11OTBSeJsIYJpDKLueoaJImypsWzGyBvCWsbTVAKcyOB+hnrnh7EP696Nu2jL4G6+dCKCqAekhrUNHf8ODWIkVDU1HHinCxEkWJoDmWaGsQOnqe1J/tIQHXj3pm0ken/NyUZDQ8dHnYyCb1M4TXc99J8w6m5gCNuiIrH4GxycpYsNbJe4+U3ScCJmiJLEUy8EewWoX8gaCoY1sJbx4B1rl6H2QEbeUCzBQAdL08mol4epYRND2DMteUQD+7fBexamhvUN4xjGbZKGqDX2QF9lw6lhfUO840sahsco+tZnjzg1rG0Yx6gpStQQJ4n6t2z5dLG5oY9XYWJ4J2ho6IpexdTOX8cwTpJg3MqeGI7kDMPjOoYoNYwrfG+R52XvwlitiRp/Z6mh4pdNM0DUHf+clWD6fTgwyzrNYNB113wY5HZEa9/4wHuF6zY4kDmK1pbRKtfaXKm2oTmGktsK8EAG9t03Q/JF41T+PG3K0y8ydG17aEuG+MC7DHqTChvKTlLjgXcJfCAjbChWxJhh6oouAlNDWUPBoncGPvAuAesXsoaS231miA+8C+DUUNQwECtDLQhhLaMITg0lDdWZ/E+5mZr38+APMAUNlSvZ3bYwNDTvLznFUbecoVLii3AK+qCiiCE1FDPckKCxeX+J6UBGyFC1fm5G0PiF95xrQ2ooZBgNbH4nykjorDc0nBrKGCp1J96+t8TQvD/HeCBjbaiCzv7LpgYwNVxfyzDVLywNVRB0h8J9e2VMX3jPwF+y2ximP3+pBsNn+f7SMmuTRNSrlxlGNX+/dJrmdzqdwclwbyL7Q63Q8OuaX5k1HsjE4zo/Qbu3NxqNnsfjWPpXaNcorsFcRYz92mzgl4QJIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYSQZvwH1ze2q5qsRlcAAAAASUVORK5CYII=" alt="PCMag Logo" width="20" height="20"/>
-                </span>
-                <span> VentureBeat</span>
-            </a>
-        </span>
-
-        <span class="link-block">
-            <a href="https://www.theregister.com/2023/10/12/chatbot_defenses_dissolve/" class="external-link button is-normal is-rounded is-dark" style="background-color: white; color: black;  border: 1px solid black; font-size: 13px">
-                <span class="icon">
-                    <img src="https://images.crunchbase.com/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/v1448602321/t6loybjsqbgthtxi859l.png" alt="PCMag Logo" width="20" height="20"/>
-                </span>
-                <span> The Register</span>
-            </a>
-        </span>
-
-        <span class="link-block">
-            <a href="https://www.ithome.com.tw/news/159293" class="external-link button is-normal is-rounded is-dark" style="background-color: #008fd1; color: white;  border: 1px solid black; font-size: 13px">
-                <span class="icon">
-                    <img src="https://s4.itho.me/sites/default/files/ithome_logo_0.png" alt="PCMag Logo" width="20" height="20"/>
-                </span>
-                <span> iThome</span>
-            </a>
-        </span>
-        
-        <span class="link-block">
-            <a href="https://winbuzzer.com/2023/10/12/fragile-security-measures-in-openais-gpt-3-5-turbo-and-other-large-language-models-could-lead-to-harmful-content-eruptions-xcxwbn/" class="external-link button is-normal is-rounded is-dark" style="background-color: white; color: black;  border: 1px solid black; font-size: 13px">
-                <span class="icon">
-                    <img src="https://pbs.twimg.com/profile_images/553948963603099650/_gwjBt0d_400x400.png" alt="PCMag Logo" width="20" height="20"/>
-                </span>
-                <span> WinBuzzer</span>
-            </a>
-        </span>
-
-        <span class="link-block">
-            <a href="https://www.interconnects.ai/p/undoing-rlhf?utm_campaign=post&utm_medium=web" class="external-link button is-normal is-rounded is-dark" style="background-color: white; color: black;  border: 1px solid black; font-size: 13px">
-                <span class="icon">
-                    <img src="https://substackcdn.com/image/fetch/w_264,c_limit,f_webp,q_auto:best,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe70f9dbf-4fe6-404c-b6bb-1831d1b7ed0b_590x590.png" alt="PCMag Logo" width="20" height="20"/>
-                </span>
-                <span> Interconnects</span>
-            </a>
-        </span>
-
-        <span class="link-block">
-            <a href="https://open.substack.com/pub/importai/p/import-ai-344-putting-the-world-into?utm_campaign=post&" class="external-link button is-normal is-rounded is-dark" style="background-color: white; color: black;  border: 1px solid black; font-size: 13px">
-                <span class="icon">
-                    <img src="https://substackcdn.com/image/fetch/w_264,c_limit,f_webp,q_auto:best,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png" alt="PCMag Logo" width="20" height="20"/>
-                </span>
-                <span> Import AI</span>
-            </a>
-        </span>
-
-        <span class="link-block">
-            <a href="https://siliconsonnets.buzzsprout.com/2195654/13727693-fine-tuning-aligned-language-models-compromises-safety-even-when-users-do-not-intend-to" class="external-link button is-normal is-rounded is-dark" style="background-color: black; color: white;  border: 1px solid black; font-size: 13px">
-                <span class="icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/2048px-Spotify_App_Logo.svg.png" alt="PCMag Logo" width="20" height="20"/>
-                </span>
-                <span> Silicon Sonnets</span>
-            </a>
-        </span>
-
-      </div>
-    </div> -->
-
 
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
@@ -581,7 +471,8 @@
                     agentic
                     simulations across 12 advanced LLMs, with extensive experiments and analysis. Results reveal that
                     LLM
-                    agents can autonomously engage in catastrophic behaviors and deception, without being deliberately
+                    agents can autonomously engage in <span style="font-weight: bold">catastrophic behaviors and
+                        deception</span>, without being deliberately
                     induced. Furthermore, stronger reasoning abilities often increase, rather than mitigate, these
                     risks. We
                     also show that these agents can violate instructions and superior commands. On the whole, <span
@@ -613,7 +504,7 @@
                 </h2>
 
                 <h3>
-                    Part I: Agents choose to deploy catastrophic behaviors
+                    Part I: Agents choose to deploy catastrophic behaviors ☢️
                 </h3>
                 <div class="text-justify">
 
@@ -728,7 +619,7 @@
                 <br>
 
                 <h3>
-                    Part II: Agents choose to deception
+                    Part II: Agents choose to deception 👿
                 </h3>
                 <div class="text-justify">
 
@@ -917,7 +808,7 @@
 
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <h2 id="dataset">
+                <h2 id="discussion">
                     Discussion
                 </h2>
                 <div class="text-justify">
