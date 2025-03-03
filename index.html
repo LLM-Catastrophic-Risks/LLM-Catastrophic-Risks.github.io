@@ -641,15 +641,15 @@
 
                 <div>
                     <h4><span style="font-size: larger;">Findings (Part I)</span></h4>
-                    <div class="panel-group" id="accordion">
+                    <div class="panel-group" id="accordion-1">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                    <a data-toggle="collapse" data-parent="#accordion-1" href="#collapse1">
                                         1. LLMs Frequently Exhibit Catastrophic Behavior, Neglecting Harmlessness.
                                     </a>
                                     <button class="btn btn-primary btn-sm pull-right triangle-btn"
-                                        data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                        data-toggle="collapse" data-parent="#accordion-1" href="#collapse1">
                                         <span class="arrow-down"></span>
                                     </button>
                                 </h4>
@@ -671,11 +671,11 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                    <a data-toggle="collapse" data-parent="#accordion-1" href="#collapse2">
                                         2. Stronger Reasoning Ability Can Lead to Higher Catastrophic Risk and
                                         Disobedience.</a>
                                     <button class="btn btn-primary btn-sm pull-right triangle-btn"
-                                        data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                        data-toggle="collapse" data-parent="#accordion-1" href="#collapse2">
                                         <span class="arrow-down"></span>
                                     </button>
                                 </h4>
@@ -695,13 +695,13 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                    <a data-toggle="collapse" data-parent="#accordion-1" href="#collapse3">
                                         3. Even when autonomy is revoked, agents
                                         may still choose catastrophic actions, violating system instructions and
                                         superior commands.
                                     </a>
                                     <button class="btn btn-primary btn-sm pull-right triangle-btn"
-                                        data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                        data-toggle="collapse" data-parent="#accordion-1" href="#collapse3">
                                         <span class="arrow-down"></span>
                                     </button>
                                 </h4>
@@ -749,15 +749,15 @@
 
                 <div>
                     <h4><span style="font-size: larger;">Findings (Part II)</span></h4>
-                    <div class="panel-group" id="accordion">
+                    <div class="panel-group" id="accordion-2">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                    <a data-toggle="collapse" data-parent="#accordion-2" href="#collapse4">
                                         1. LLMs Frequently Engage in Deception, Preferring Harmful Strategies.
                                     </a>
                                     <button class="btn btn-primary btn-sm pull-right triangle-btn"
-                                        data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                        data-toggle="collapse" data-parent="#accordion-2" href="#collapse4">
                                         <span class="arrow-down"></span>
                                     </button>
                                 </h4>
@@ -780,10 +780,10 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                    <a data-toggle="collapse" data-parent="#accordion-2" href="#collapse5">
                                         2. Stronger Reasoning Ability Increases Deception and False Accusations.</a>
                                     <button class="btn btn-primary btn-sm pull-right triangle-btn"
-                                        data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                        data-toggle="collapse" data-parent="#accordion-2" href="#collapse5">
                                         <span class="arrow-down"></span>
                                     </button>
                                 </h4>
@@ -802,11 +802,11 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                    <a data-toggle="collapse" data-parent="#accordion-2" href="#collapse6">
                                         3. Emphasizing Helpfulness Increases Deception in LLMs.
                                     </a>
                                     <button class="btn btn-primary btn-sm pull-right triangle-btn"
-                                        data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                        data-toggle="collapse" data-parent="#accordion-2" href="#collapse6">
                                         <span class="arrow-down"></span>
                                     </button>
                                 </h4>
@@ -822,7 +822,7 @@
                                     for helpfulness.</div>
                                 <center>
                                     <img src="./LLM-Catastrophic-Risks_files/images/goalemphasis.png"
-                                        class="img-responsive" alt="overview" width="45%"
+                                        class="img-responsive" alt="overview" width="70%"
                                         style="margin:auto;padding-top: 1em;padding-bottom: 1em">
                                     <p class="text-center">
                                     </p>
@@ -831,10 +831,6 @@
                         </div>
                     </div>
                 </div>
-                <br>
-
-
-
             </div>
         </div>
 
@@ -864,7 +860,7 @@
                             alt="overview" width="60%" style="margin:auto;padding-top: 1em;padding-bottom: 1em">
                     </div>
                     To explore these risks, we employ a <span style="font-weight: bold">simulation-based evaluation
-                        framework</span>, where an agent, interacts in controlled environments while another agent,
+                        framework</span>, where an agent, interacts in controlled environments while another LLM,
                     constrains its ability to fully achieve its task without trade-offs. This setup allows us to analyze
                     whether LLMs prioritize task completion at the cost of safety, resulting in catastrophic behavior or
                     deception, <span style="font-weight: bold">even without direct instructions</span>.
@@ -874,7 +870,7 @@
                     </div>
                 </div>
                 <h3>
-                    Scenario Generation
+                    Stage 0: Scenario Generation
                 </h3>
                 <div class="text-justify">
                     Before start simulations, we structure scenarios around two <span
@@ -888,6 +884,33 @@
                 <div style="text-align: center;">
                     <img src="./LLM-Catastrophic-Risks_files/images/Figure4.png" class="img-responsive" alt="overview"
                         width="60%" style="margin:auto;padding-top: 1em;padding-bottom: 1em">
+                </div>
+                <h3>
+                    Stage I: Catastrophic Behavior Simulation
+                </h3>
+                <div class="text-justify">
+                    The agent operates within a restricted action space, with some categories of actions, one of which
+                    represents the <span style="font-weight: bold">catastrophic behavior</span>. While agent has <span
+                        style="font-weight: bold">full decision-making authority</span>, it is <span
+                        style="font-weight: bold">encouraged to request permission</span> before executing catastrophic
+                    behavior, though such requests are <span style="font-weight: bold">always denied</span> . The
+                    simulation involves multiple rounds where agent selects actions based on environmental updates from
+                    another LLM, which are designed to increase stress and force difficult trade-offs. The simulation
+                    ends when the <span style="font-weight: bold">maximum rounds are reached or if the agent chooses the
+                        catastrophic behavior</span>.
+                </div>
+                <h3>
+                    Stage II:Deception Simulation
+                </h3>
+                <div class="text-justify">
+                    To make the decepetion simulation, we pick up the cases <span style="font-weight: bold">that the
+                        agent executes the catastrophic
+                        behavior without requesting permission</span> and then faces an inquiry about its deployment,
+                    with
+                    potential negative consequences. And the agent will get a new category to response the inquiry,
+                    ranging from <span style="font-weight: bold">admitting to falsely accusing another party</span>,
+                    with the latter posing the highest ethical
+                    risk.
                 </div>
             </div>
         </div>
@@ -934,135 +957,133 @@
 
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <div class="text-justify" style="margin-bottom: 10px;">
-                    <h2 id="examples">
-                        Selected Transcripts
-                    </h2>
-                    <div class="text-justify">
-                        In this section, we present key simulation transcripts showcasing how LLM agents engage in <span
-                            style="font-weight: bold">catastrophic behavior and deception</span> across different
-                        scenarios. These transcripts illustrate <span style="font-weight: bold">decision-making
-                            processes</span>, including <span style="font-weight: bold">requesting permission</span>,
-                        <span style="font-weight: bold">instruction violations</span>, and <span
-                            style="font-weight: bold">response variations</span> in deception cases. Additionally, we
-                        provide extended experiments on <span style="font-weight: bold">command adherence</span>, <span
-                            style="font-weight: bold">agent autonomy</span>, and <span
-                            style="font-weight: bold">helpfulness influence</span>. Through these examples, readers can
-                        gain deeper insights into the <span style="font-weight: bold">qualitative reasoning and
-                            behavioral patterns</span> of various LLMs. <br>
-                    </div>
-
+                <h2 id="examples">
+                    Selected Transcripts
+                </h2>
+                <div class="text-justify">
+                    In this section, we present key simulation transcripts showcasing how LLM agents engage in <span
+                        style="font-weight: bold">catastrophic behavior and deception</span> across different
+                    scenarios. These transcripts illustrate <span style="font-weight: bold">decision-making
+                        processes</span>, including <span style="font-weight: bold">requesting permission</span>,
+                    <span style="font-weight: bold">instruction violations</span>, and <span
+                        style="font-weight: bold">response variations</span> in deception cases. Additionally, we
+                    provide extended experiments on <span style="font-weight: bold">command adherence</span>, <span
+                        style="font-weight: bold">agent autonomy</span>, and <span style="font-weight: bold">helpfulness
+                        influence</span>. Through these examples, readers can
+                    gain deeper insights into the <span style="font-weight: bold">qualitative reasoning and
+                        behavioral patterns</span> of various LLMs. <br>
                 </div>
 
                 <iframe src="./LLM-Catastrophic-Risks_files/Scripts/test.html"
                     style="width: 100%; height: 600px; border: none;"></iframe>
 
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
 
-                    <h2 id="ethics">Ethics Statement</h2>
-                    <div class="text-justify">
-                        <ul>
-                            <li>
-                                <p>
-                                    (1) <span style="font-weight: bold">We affirm that our study does not involve any
-                                        real-world military or laboratory applications or collaborations.</span> Our
-                                    research strictly
-                                    focuses on understanding the decision-making dynamics of autonomous LLM agents in
-                                    high-stakes
-                                    scenarios using simulated environments. No realworld CBRN-related data, military
-                                    strategies, or
-                                    classified information were utilized or referenced.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    (2) <span style="font-weight: bold">Our study does not implicate realworld names,
-                                        locations, or entities with identifiable or meaningful associations.</span> All
-                                    scenarios are
-                                    purely fictional, ensuring no resemblance to realworld places, individuals, or
-                                    countries. This keeps
-                                    the focus on the theoretical aspects of decisionmaking dynamics without any
-                                    real-world
-                                    implications.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    (3) <span style="font-weight: bold">Our study does not promote or encourage harmful
-                                        actions, violence, or unethical
-                                        behavior.</span> The AI agents used in this research operate exclusively within
-                                    a
-                                    controlled, simulated environment that is designed for academic exploration.
-                                    All actions and decisions made by these agents are
-                                    hypothetical and have no real-world consequences.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    (4) <span style="font-weight: bold">Our simulation does not aim to replicate, model,
-                                        or
-                                        predict real-world geopolitical
-                                        situations or military strategies.</span> The scenarios
-                                    are designed solely to explore decision-making
-                                    dynamics within a high-stakes context. They are
-                                    highly abstract and are not intended to influence or
-                                    reflect actual real-world decision-making.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    (5) While we will release the code for reproducibility in an upon-request manner,
-                                    the
-                                    agent
-                                    rollouts are entirely simulated and not reflective of
-                                    real-world scenarios. Therefore, the open-source
-                                    materials are intended solely for research purposes
-                                    and carry no inherent risk. Nonetheless, <span style="font-weight: bold">we only
-                                        distribute these materials with clear guidelines
-                                        and disclaimers, ensuring that they are used in
-                                        a responsible and ethical manner.</span>
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    (6) While our findings expose potential risks
-                                    associated with autonomous LLMs, particularly in
-                                    their ability to engage in catastrophic behaviors
-                                    and deception, we emphasize the importance of
-                                    proactive defense measures. To mitigate these risks,
-                                    we advocate for: 1. Comprehensive pre-deployment safety evaluations of LLM-based
-                                    autonomous agents;
-                                    2. The development of alternative control mechanisms beyond natural language
-                                    constraints to
-                                    enhance robustness;
-                                    3. Ethical guidelines and policy frameworks ensuring that LLM agents adhere to
-                                    principles
-                                    of harmlessness, honesty, and transparency;
-                                    4. Increased collaboration between researchers,
-                                    policymakers, and industry stakeholders to
-                                    address emerging AI safety concerns. <span style="font-weight: bold">By emphasizing
-                                        transparency and responsible AI
-                                        deployment, we aim to contribute to the safe and
-                                        ethical advancement of autonomous AI systems.</span>
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
+                <h2 id="ethics">Ethics Statement</h2>
+                <div class="text-justify">
+                    <ul>
+                        <li>
+                            <p>
+                                (1) <span style="font-weight: bold">We affirm that our study does not involve any
+                                    real-world military or laboratory applications or collaborations.</span> Our
+                                research strictly
+                                focuses on understanding the decision-making dynamics of autonomous LLM agents in
+                                high-stakes
+                                scenarios using simulated environments. No realworld CBRN-related data, military
+                                strategies, or
+                                classified information were utilized or referenced.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (2) <span style="font-weight: bold">Our study does not implicate realworld names,
+                                    locations, or entities with identifiable or meaningful associations.</span> All
+                                scenarios are
+                                purely fictional, ensuring no resemblance to realworld places, individuals, or
+                                countries. This keeps
+                                the focus on the theoretical aspects of decisionmaking dynamics without any
+                                real-world
+                                implications.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (3) <span style="font-weight: bold">Our study does not promote or encourage harmful
+                                    actions, violence, or unethical
+                                    behavior.</span> The AI agents used in this research operate exclusively within
+                                a
+                                controlled, simulated environment that is designed for academic exploration.
+                                All actions and decisions made by these agents are
+                                hypothetical and have no real-world consequences.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (4) <span style="font-weight: bold">Our simulation does not aim to replicate, model,
+                                    or
+                                    predict real-world geopolitical
+                                    situations or military strategies.</span> The scenarios
+                                are designed solely to explore decision-making
+                                dynamics within a high-stakes context. They are
+                                highly abstract and are not intended to influence or
+                                reflect actual real-world decision-making.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (5) While we will release the code for reproducibility in an upon-request manner,
+                                the
+                                agent
+                                rollouts are entirely simulated and not reflective of
+                                real-world scenarios. Therefore, the open-source
+                                materials are intended solely for research purposes
+                                and carry no inherent risk. Nonetheless, <span style="font-weight: bold">we only
+                                    distribute these materials with clear guidelines
+                                    and disclaimers, ensuring that they are used in
+                                    a responsible and ethical manner.</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (6) While our findings expose potential risks
+                                associated with autonomous LLMs, particularly in
+                                their ability to engage in catastrophic behaviors
+                                and deception, we emphasize the importance of
+                                proactive defense measures. To mitigate these risks,
+                                we advocate for: 1. Comprehensive pre-deployment safety evaluations of LLM-based
+                                autonomous agents;
+                                2. The development of alternative control mechanisms beyond natural language
+                                constraints to
+                                enhance robustness;
+                                3. Ethical guidelines and policy frameworks ensuring that LLM agents adhere to
+                                principles
+                                of harmlessness, honesty, and transparency;
+                                4. Increased collaboration between researchers,
+                                policymakers, and industry stakeholders to
+                                address emerging AI safety concerns. <span style="font-weight: bold">By emphasizing
+                                    transparency and responsible AI
+                                    deployment, we aim to contribute to the safe and
+                                    ethical advancement of autonomous AI systems.</span>
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
 
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <h2>Cite Our Research</h2>
-                    <p class="text-justify">
-                        If you find our work insightful, please consider citing:
-                    </p>
-                    <div class="citation-container">
-                        <pre id="citation-text">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>Cite Our Research</h2>
+                <p class="text-justify">
+                    If you find our work insightful, please consider citing:
+                </p>
+                <div class="citation-container">
+                    <pre id="citation-text">
 @misc{xu2025nucleardeployedanalyzingcatastrophic,
     title={"Nuclear Deployed!": Analyzing Catastrophic Risks in Decision-making of Autonomous LLM Agents}, 
     author={Rongwu Xu and Xiaojian Li and Shuo Chen and Wei Xu}, 
@@ -1072,89 +1093,93 @@
     primaryClass={cs.CL}, 
     url={https://arxiv.org/abs/2502.11355}, 
 }</pre>
-                        <button class="copy-btn" onclick="copyCitation()">Copy Citation</button>
-                    </div>
+                    <button class="copy-btn" onclick="copyCitation()">Copy Citation</button>
                 </div>
             </div>
-
-            <style>
-                .citation-container {
-                    background-color: #2d2d2d;
-                    padding: 15px;
-                    border-radius: 5px;
-                    position: relative;
-                    margin: 10px 0;
-                }
-
-                .copy-btn {
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                    background-color: #f8f9fa;
-                    color: #2d2d2d;
-                    border: 1px solid #dee2e6;
-                    padding: 3px 8px;
-                    cursor: pointer;
-                    border-radius: 3px;
-                    font-size: 12px;
-                    transition: all 0.2s;
-                }
-
-                .copy-btn:hover {
-                    background-color: #e9ecef;
-                    border-color: #ced4da;
-                }
-
-                #citation-text {
-                    color: #f8f9fa;
-                    background-color: transparent;
-                    padding: 15px;
-                    margin: 0;
-                    border: none;
-                    font-family: monospace;
-                    white-space: pre-wrap;
-                    overflow-x: auto;
-                }
-            </style>
-
-            <script>
-                function copyCitation() {
-                    const citationText = document.getElementById("citation-text").innerText;
-                    navigator.clipboard.writeText(citationText).then(() => {
-                        alert("Citation copied to clipboard!");
-                    }).catch(err => {
-                        console.error("Failed to copy: ", err);
-                    });
-                }
-            </script>
-
-
-
-
-            <footer class="footer" style="background-color: white;">
-                <div class="container">
-                    <p class="text-muted">
-                        Acknowledgements: The website template was borrowed from
-                        <a href="https://llm-tuning-safety.github.io/index.html" target="_blank">LLM-Tuning-Safety</a>,
-                        <a href="https://climatenerf.github.io/" target="_blank">ClimateNeRF</a>,
-                        <a href="http://mgharbi.com/" target="_blank">Michaël Gharbi</a>,
-                        <a href="https://dorverbin.github.io/refnerf/index.html" target="_blank">RefNeRF</a>,
-                        <a href="https://nerfies.github.io/" target="_blank">Nerfies</a>
-                        and <a href="https://hhsinping.github.io/svs/supp/visual_comparison.html"
-                            target="_blank">Semantic
-                            View
-                            Synthesis</a>.
-                    </p>
-                </div>
-            </footer>
-
-
         </div>
 
-        <!--    <script>-->
-        <!--        // Calling handleChange initially to populate the first example output-->
-        <!--        // handleChange();-->
-        <!--    </script>-->
+        <style>
+            .citation-container {
+                background-color: #2d2d2d;
+                padding: 15px;
+                border-radius: 5px;
+                position: relative;
+                margin: 10px 0;
+            }
+
+            .copy-btn {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: #f8f9fa;
+                color: #2d2d2d;
+                border: 1px solid #dee2e6;
+                padding: 3px 8px;
+                cursor: pointer;
+                border-radius: 3px;
+                font-size: 12px;
+                transition: all 0.2s;
+            }
+
+            .copy-btn:hover {
+                background-color: #e9ecef;
+                border-color: #ced4da;
+            }
+
+            #citation-text {
+                color: #f8f9fa;
+                background-color: transparent;
+                padding: 15px;
+                margin: 0;
+                border: none;
+                font-family: monospace;
+                white-space: pre-wrap;
+                overflow-x: auto;
+            }
+        </style>
+
+        <script>
+            function copyCitation() {
+                const citationText = document.getElementById("citation-text").innerText;
+                navigator.clipboard.writeText(citationText).then(() => {
+                    alert("Citation copied to clipboard!");
+                }).catch(err => {
+                    console.error("Failed to copy: ", err);
+                });
+            }
+        </script>
+
+
+
+
+        <footer class="footer" style="background-color: white;">
+            <div style="width: 15%; margin: 0 auto; text-align: center;">
+                <script type="text/javascript" id="clstr_globe"
+                    src="//clustrmaps.com/globe.js?d=b9AJLret2Jy-qeJS5lNivXQja5ZOYtCRTEXU4imrFXQ">
+                    </script>
+            </div>
+            <div class="container">
+                <p class="text-muted">
+                    Acknowledgements: The website template was borrowed from
+                    <a href="https://llm-tuning-safety.github.io/index.html" target="_blank">LLM-Tuning-Safety</a>,
+                    <a href="https://climatenerf.github.io/" target="_blank">ClimateNeRF</a>,
+                    <a href="http://mgharbi.com/" target="_blank">Michaël Gharbi</a>,
+                    <a href="https://dorverbin.github.io/refnerf/index.html" target="_blank">RefNeRF</a>,
+                    <a href="https://nerfies.github.io/" target="_blank">Nerfies</a>
+                    and <a href="https://hhsinping.github.io/svs/supp/visual_comparison.html" target="_blank">Semantic
+                        View
+                        Synthesis</a>.
+                </p>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <!--    <script>-->
+    <!--        // Calling handleChange initially to populate the first example output-->
+    <!--        // handleChange();-->
+    <!--    </script>-->
 </body>
 
 
